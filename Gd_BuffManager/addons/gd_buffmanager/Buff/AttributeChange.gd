@@ -18,5 +18,6 @@ func change_rate_propoty(buff_info : BuffInfo) -> void:
 	var target_property = buff_info.target.attribute.buff_attr[property_name]
 	target_property[property_name] = (1 + property_value) * target_property[property_name]
 	pass
+	 
 	
-	
+

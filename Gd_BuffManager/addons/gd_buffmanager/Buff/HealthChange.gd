@@ -9,12 +9,13 @@ func apply(buff_info : BuffInfo):
 	else :
 		pass
 
-func change_int_cur_health(buff_info : BuffInfo) -> void:
+func change_int_cur_health(buff_info : BuffInfo) -> int:
 	buff_info.target.cur_health += property_value
-	pass
+	return int(property_value)
 	
 
-func change_rate_cur_health(buff_info : BuffInfo) -> void:
+func change_rate_cur_health(buff_info : BuffInfo) -> int:
 	var target_property = buff_info.target.cur_health
-	target_property = (1 + property_value) * buff_info.target.max_health
-	pass
+	var change          = property_value * buff_info.target.max_health
+	target_property     = change
+	return int(change)

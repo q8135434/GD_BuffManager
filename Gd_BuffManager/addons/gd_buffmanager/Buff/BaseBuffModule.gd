@@ -10,3 +10,6 @@ func _init(_data:Dictionary):
 
 func apply(buff_info : BuffInfo):
 	return
+	
+static func test_aa():
+	print("as1v2132")
