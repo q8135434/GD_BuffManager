@@ -20,4 +20,3 @@ func change_rate_propoty(buff_info : BuffInfo) -> void:
 	pass
 	 
 	
-
